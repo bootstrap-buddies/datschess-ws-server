@@ -14,7 +14,7 @@ namespace Example
     {
         static void Main(string[] args)
         {
-            var wssv = new WebSocketServer("ws://localhost:8000");
+            var wssv = new WebSocketServer("ws://localhost:7998");
             wssv.AddWebSocketService<Chess>("/Chess");
             wssv.Start();
             if (wssv.IsListening)
